@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login |Agencia de Viajes|</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form method="POST" action="/Agencia de Viajes/login/Comprueba_login.php">
+                <input type="text" placeholder="Usuario" name="email" required>
+                <input type="password" placeholder="Contraseña" name="password" required>
+                <a ><input type="submit" name="login" value="Iniciar Sesión"></a>
+            </form>
+        </div>
+        
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form method="POST" action="login/Registro.php">
+                <input type="text" placeholder="Nombre" name="Nombre" required>
+                
+                <input type="password" placeholder="Contraseña" name="Contra" required>
+                
+                <input type="email" placeholder="Correo Electronico" name="Correo" required>
+                
+                <input type="submit" value="Registrar">
+            </form>
+        </div>
+        
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
+</body>
+</html>
